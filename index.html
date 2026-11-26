@@ -52,7 +52,10 @@ input:focus,textarea:focus{border-color:var(--acc)}
 .marq div{display:inline-block;animation:m 30s linear infinite}@keyframes m{to{transform:translateX(-50%)}}
 footer{padding:50px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;color:var(--mut);font-size:14px}
 /* motion */
-main,footer{position:relative;z-index:1}
+main,.cinfo{list-style:none;padding:0;margin:0 0 28px}.cinfo li{padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}.cinfo small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:2px}.cinfo a:hover{color:var(--acc)}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}.soc a{padding:8px 16px;border:1px solid var(--line);border-radius:99px;font-size:13px;color:var(--mut);transition:.2s}.soc a:hover{border-color:var(--acc);color:#fff;background:var(--acc)}
+footer .soc{margin:0}
+footer{position:relative;z-index:1}
 .bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:2px;background:var(--acc);transform-origin:0 50%;transform:scaleX(0);z-index:30}
 .glow{position:fixed;left:0;top:0;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(139,108,255,.16),transparent 65%);pointer-events:none;z-index:0;transition:transform .3s ease-out}
 header{transition:transform .45s cubic-bezier(.2,.7,.2,1)}header.hide{transform:translateY(-110%)}
@@ -146,7 +149,7 @@ nav a{position:relative}nav a::after{content:"";position:absolute;left:0;bottom:
 <div class="view" id="about">
 <section><div class="eye">The studio</div><h1>Small team.<br>Big craft.</h1>
 <div class="two" style="margin-top:60px"><div class="ph a" style="min-height:460px"><span>Studio photo / team portrait</span></div>
-<div><h2>We believe design is a business tool, not decoration.</h2><p class="lead">AltSeven Studio is an independent design agency working with founders and growing brands worldwide. We combine strategic thinking with obsessive craft to build identities people remember.</p><a class="btn f" href="#contact">Work with us</a></div></div>
+<div><div class="eye">Alternate Thinking. Elevated Design.</div><h2>We believe great design begins with a different perspective.</h2><p class="lead">AltSeven is an independent creative studio bringing fresh ideas to life through thoughtful design. From building distinctive brand identities to creating meaningful digital experiences, we help businesses express who they are and stand apart.</p><p class="lead" style="margin-top:-12px">We question the ordinary, explore the unexpected, and find creative ways to make ideas matter. Because for us, design isn’t just about looking different. It’s about making a difference.</p><a class="btn f" href="#contact">Work with us</a></div></div>
 <div class="grid"><div class="svc"><b>Clarity</b><p>Simple ideas, executed precisely.</p></div><div class="svc"><b>Craft</b><p>Every detail is considered.</p></div><div class="svc"><b>Partnership</b><p>We work as an extension of your team.</p></div></div>
 </section>
 </div>
@@ -154,13 +157,13 @@ nav a{position:relative}nav a::after{content:"";position:absolute;left:0;bottom:
 <div class="view" id="contact">
 <section><div class="eye">Contact</div><h1>Let’s build<br>something great.</h1>
 <div class="two" style="margin-top:60px">
-<div><p class="lead" style="margin-top:0">Tell us about your project. We reply within one business day.</p><p>hello@altseven.studio</p><p style="color:var(--mut)">Available worldwide · Remote-first</p></div>
+<div><p class="lead" style="margin-top:0">Tell us about your project. We reply within one business day.</p><ul class="cinfo"><li><small>Email</small><a href="mailto:altsevenstudio@gmail.com">altsevenstudio@gmail.com</a></li><li><small>Phone</small><a href="tel:+918433892345">+91 84338 92345</a></li><li><small>WhatsApp</small><a href="https://wa.me/918433892345" target="_blank" rel="noopener">+91 84338 92345</a></li><li><small>Studio</small>A-116, Great Eastern Chamber, Sector 11, CBD Belapur, Navi Mumbai, Maharashtra 400614</li></ul><div class="soc"><a href="https://www.instagram.com/altsevenstudio?knvt=bnkxamwxNnpjNGxu" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61590486102403" target="_blank" rel="noopener">Facebook</a><a href="https://www.threads.com/@altsevenstudio?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">Threads</a><a href="https://www.youtube.com/@AltSevenStudio" target="_blank" rel="noopener">YouTube</a><a href="https://www.linkedin.com/in/altseven-studio-6782133a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/918433892345" target="_blank" rel="noopener">WhatsApp</a></div></div>
 <div><input placeholder="Name" aria-label="Name"><input placeholder="Email" type="email" aria-label="Email"><select aria-label="Service"><option>Logo design</option><option>Brand identity</option><option>Packaging</option><option>Social media</option><option>Ads</option><option>Website</option></select><textarea rows="4" placeholder="Tell us about your project" aria-label="Message"></textarea><br><br><button class="btn f" style="cursor:pointer;font:inherit" onclick="this.textContent='Thanks — we’ll be in touch.'">Send enquiry</button></div>
 </div></section>
 </div>
 </main>
 
-<footer><span>© 2026 AltSeven Studio</span><span>Logos · Identity · Packaging · Ads · Web</span><a href="#home">Back to top ↑</a></footer>
+<footer><span>© 2026 AltSeven Studio<br>altsevenstudio@gmail.com · +91 84338 92345</span><div class="soc"><a href="https://www.instagram.com/altsevenstudio?knvt=bnkxamwxNnpjNGxu" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61590486102403" target="_blank" rel="noopener">Facebook</a><a href="https://www.threads.com/@altsevenstudio?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">Threads</a><a href="https://www.youtube.com/@AltSevenStudio" target="_blank" rel="noopener">YouTube</a><a href="https://www.linkedin.com/in/altseven-studio-6782133a1?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a><a href="https://wa.me/918433892345" target="_blank" rel="noopener">WhatsApp</a></div><a href="#home">Back to top ↑</a></footer>
 
 <script>
 const ids=['home','work','services','about','contact'];
